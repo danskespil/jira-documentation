@@ -44,8 +44,25 @@ The *Key* of the project is import because that is what will be used to link JIR
 
 # Make a Scrum board
 
+Create a board for your project, for instance a Scrum board:
+
 ![Scrum board](scrum-1.png)
 
 ![Board](scrum-2.png)
 
+Give the board a name that relates it to the project (because there are many boards in our JIRA):
+
 ![Backlog](scrum-3.png)
+
+The vanilla board is very simple, so you might want to add an extra column for In Review:
+
+![Simple Board](scrum-4.png)
+
+![Simple Backlog configuration](scrum-5.png)
+
+Add a column to the board, and drag the IN REVIEW status to the In Review column:
+
+![Review Column](scrum-6.png)
+
+That is it, now you have a new Scrum project that automatically tracks feature branches in you Git repository.
+
