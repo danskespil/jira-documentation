@@ -1,15 +1,5 @@
 # How to create a new development project in Danske Spil's JIRA
 
-Creating a project as described here will allow your team to use Branches and Pull Requests in your source-code repositories to automate the transition of issues in JIRA.  Specifically
-- When you create a new branch for an issue/feature, the corresponding issue will automatically transition to *IN PROGRESS* in Jira.
-- When you create a new pull request for a branch, the issue will transition to *REVIEW*.
-- If a pull request is rejected, then the issue will transistion back to *IN PROGRESS*.
-- When a pull request is merged back into *master*, the issue will transition to *DONE*.
-
-This is part of a [greater effort](https://jira.danskespil.dk/jira/browse/DEVOPS-388) to get better release reports.
-
-# Create new repository
-
 Start with creating a repository for the source code.  That way JIRA have time to pick up on the existence of the repository.
 
 Go to [Bitbucket](https://bitbucket.org/dsintegration/) and create a new repository:
@@ -26,7 +16,7 @@ Clone the repo, create a readme, and push it back to get started.  I do it this 
 
 ![Create new repo 5](new-repo-5.png)
 
-# Create new project
+## Create new project
 
 Log in to [JIRA](https://jira.danskespil.dk), and Create a project with shared configuration.
 
@@ -42,7 +32,7 @@ The *Key* of the project is import because that is what will be used to link JIR
 
 ![Create project 4](new-jira-project-04.png)
 
-# Make a Scrum board
+## Make a Scrum board
 
 Create a board for your project, for instance a Scrum board:
 
@@ -54,7 +44,7 @@ Give the board a name that relates it to the project (because there are many boa
 
 ![Backlog](scrum-3.png)
 
-The vanilla board is very simple, so you might want to add an extra column for In Review:
+The vanilla board is very simple, which is good, simple is good.  But you might want to add an extra column for In Review:
 
 ![Simple Board](scrum-4.png)
 
@@ -64,5 +54,4 @@ Add a column to the board, and drag the IN REVIEW status to the In Review column
 
 ![Review Column](scrum-6.png)
 
-That is it, now you have a new Scrum project that automatically tracks feature branches in you Git repository.
-
+That is it, now you have a new Scrum project that automatically [tracks feature branches](../using-branches/using-branches-to-control-issues.md) in you Git repository.
