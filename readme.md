@@ -11,7 +11,7 @@ There are basically two routes, depending on whether you have an existing projec
 - [Creating a new JIRA project](new-project/new-project-in-jira.md).
 - [Automating an existing JIRA project](existing-project/existing-project-in-jira.md).
 
-After you have setup your project, you can make the issues transition automatically be [using branches](../using-branches/using-branches-to-control-issues.md) in your project repository.
+After you have setup your project, you can make the issues transition automatically be [using branches](using-branches/using-branches-to-control-issues.md) in your project repository.
 
 This is part of a [greater effort](https://jira.danskespil.dk/jira/browse/DEVOPS-388) to get better release reports.
 
